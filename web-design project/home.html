@@ -1,0 +1,183 @@
+<!Doctype html>
+<html>
+
+	<head> 
+	<meta charset="utf-8"/>
+	<link rel="icon" href="icon2.jpg" sizes="32*32"/>
+	<link href="css.css" type="text/css" rel= "stylesheet">
+	<title>World of Web Design</title>
+	
+	<style>
+		body{
+			background-color:Azure;
+			}
+		h2{
+			background-color:snow;
+			}
+	.topnav
+		{
+			list-style-type:none;
+			display:block;
+			width:80px;
+			text-align:center;
+			padding:padding-left;
+			float:left;
+			background-color:#ADFF2F;
+		}
+	footer{
+		text-align:center;
+		}
+	</style>
+	</head>
+
+<body>
+	
+	<header><a href="home.html"><img src="icon2.jpg" alt="logo area" height="250" width="400"/></a> <a href="home.html"><img src="icon2.jpg" alt="logo area" height="250" width="400"/></a> <a href="home.html"><img src="icon2.jpg" alt="logo area" height="250" width="400"/></a>
+	</header>
+	
+		<nav>
+			<ul>
+			<a class="topnav" href="home.html" target="_top"><li>HOME</li></a>
+			<a class="topnav" href="html.html" target="_top"><li>HTML</li></a>
+			<a class="topnav" href="css.html" target="_top"><li>CSS</li></a>
+			<a class="topnav" href="javascript.html" target="_top"><li>JavaScript</li></a>
+			<a class="topnav" href="About.html" target="_top"><li>About</li></a>
+			</ul>
+		</nav>
+	</br>
+	</br>
+	</br>
+	<section>
+		
+	
+	<ul>
+			<h2 style="text-align:center;"><p>What is Web Design?</p></h2>
+	
+		<li>Design is the process of collecting ideas, and
+		aesthetically arranging and implementing them,
+		guided by certain principles for a specific
+		purpose</li>
+	
+		<li>Web Design is a similar process of creation,
+		with the intention of presenting the content on
+		electronic web pages, which the end-users can
+		access through the internet with the help of a
+		web browser</li>
+	</ul>	
+	
+	<ul>
+	
+		<h2 style="text-align:center;"><p>Elements of Web Design</p></h2>
+	<li>Layout: This is the way the graphics, ads and text are arranged</li>
+	<li>Colour: The choice of colours depends on the purpose and
+	clientele; it could be simple black-and-white to multi-coloured
+	design, conveying the personality of a person or the brand of an
+	organization, using web-safe colours</li>
+	<li> Graphics: Graphics can include logos, photos, clipart or icons, all
+	of which enhance the web design</li>
+	<li>Fonts: The use of various fonts can enhance a website design.
+	Most web browsers can only read a select number of fonts, known
+	as "web-safe fonts"</li>
+	<li>Content: Content and design can work together to enhance the
+	message of the site through visuals and text. Written text should
+	always be relevant and useful</li>
+	</ul>
+	
+		<h2 style="text-align:center;"><p>What is a Browser?</p></h2>
+	A browser is software that allows you to access
+	the web. It lets you visit websites and carry out
+	your activities on them</br><img src="browser2.jpg" alt="browser" height="400" width="1000"/>
+	
+		<ol>
+		<h2 style="text-align:center;">How Does a Browser Render a Webpage?</h2>
+	<li>You type an URL into address bar in your preferred
+	browser</li>
+	<li>The browser parses the URL to find the protocol, host,
+	port, and path
+	<li>It forms a HTTP request (that was most likely the protocol)
+	<li>To reach the host, it first needs to translate the human
+	readable host into an IP number, and it does this by doing a
+	DNS lookup on the host
+	<li>Then a socket needs to be opened from the user’s
+	computer to that IP number, on the port specified (most often
+	port 80)</li>
+	<li>When a connection is open, the HTTP request is sent to the
+	host</li>
+	<li>The host forwards the request to the server software (most
+	often Apache) configured to listen on the specified port</li>
+	<li>The server inspects the request (most often only the path), and
+	launches the server plugin needed to handle the request
+	(corresponding to the server language you use, PHP, Java, .NET,
+	Python?)</li>
+	<li>The plugin gets access to the full request, and starts to prepare
+	a HTTP response</li>
+	<li>To construct the response a database is (most likely)
+	accessed. A database search is made, based on parameters in the
+	path (or data) of the request</li>
+	<li>Data from the database, together with other information the
+	plugin decides to add, is combined into a long string of text
+	(probably HTML)</li>
+	<li>The plugin combines that data with some meta data (in the
+	form of HTTP headers), and sends the HTTP response back to the
+	browser</li>
+	<li>The browser receives the response, and parses the HTML
+	(which with 95% probability is broken) in the response</li>
+	<li>A DOM tree is built out of the broken HTML</li>
+	<li>New requests are made to the server for each new resource
+	that is found in the HTML source (typically images, style sheets,
+	and JavaScript files). Go back to step 3 and repeat for each
+	resource</li>
+	<li>Stylesheets are parsed, and the rendering
+	information in each gets attached to the matching node
+	in the DOM tree</li>
+	<li>Javascript is parsed and executed, and DOM nodes
+	are moved and style information is updated accordingly</li>
+	<li> The browser renders the page on the screen
+	according to the DOM tree and the style information for
+	each node</li>
+	<li> You see the page on the screen</li>
+	<li> You get annoyed the whole process was too slow.</li>
+	</ol>
+	
+	
+	<ul>
+		<h2 style="text-align:center;"><p>Explaining Terms</p></h2>
+	<li>Web Page: A document which can be displayed in a
+	web browser such as Firefox, Google Chrome, Opera,
+	Microsoft Internet Explorer or Edge, or Apple's Safari</li>
+	<li>Website: A collection of web pages which are grouped
+	together and usually connected together in various
+	ways</li>
+	<li>Web Server: A computer that hosts a website on the
+	Internet.</li>
+	<li>Search Engine: A website that helps you find other
+	web pages, such as Google, Bing, or Yahoo</li>
+	</ul>
+	
+	<ol>
+		<h2 style="text-align:center;"><p>Tools You will Need</p></h2>
+	<li>A Computer</li>
+	<li>A Text Editor (Notepad++, Sublime Text or Visual
+	Studio Code)</li>
+	<li>Web Browsers (Firefox, Chrome, Opera, Safari,
+	Internet Explorer, and Microsoft Edge)</li>
+	<li>A Web Server (WAMP, XAMPP)</li>
+	You won’t need a web server until it is time to
+	work with WordPress
+	</ol>
+		
+			<h2 style="text-align:center;"><p>HOW THEY ALL FIT</p></h2> 
+		<h3 style="text-align:center;"><img src="html.jpg" alt="description" height="250" width="300"/></h3>
+
+	</section>
+	
+	<footer style="background-color:cornsilk;">
+		<a href="home.html"><img src="icon2.jpg" alt="logo area" height="100" width="250"/></a></br>
+		&copy;copyright<a href="www.facebook.com/Omosefunmi Daniel"/>Omosefunmi Daniel Olumide</a>  <a href="www.instagram.com/datdettyboi"><img src="instagram.jpg" title="instagram" width="32" height="32"/></a>
+		 <a href="www.facebook.com/Omosefunmi Daniel"/>&trade;Funmidaniel</a>
+	</footer>
+
+
+</body>
+
+</html>
